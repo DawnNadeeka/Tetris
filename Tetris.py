@@ -542,14 +542,23 @@ def setup(): #Creates game boxes
     newBlock()
 
     #Hotkeys so that the game can react when these keys are pressed
-    keyboard.add_hotkey("left", lambda: detectMovement("left"))
-    keyboard.add_hotkey("right", lambda: detectMovement("right"))
-    keyboard.add_hotkey("down", lambda: detectMovement("down"))
-    keyboard.add_hotkey("up", lambda: detectMovement("rotate"))
+    #keyboard.add_hotkey("left", lambda: detectMovement("left"))
+    #keyboard.add_hotkey("right", lambda: detectMovement("right"))
+    #keyboard.add_hotkey("down", lambda: detectMovement("down"))
+    #keyboard.add_hotkey("up", lambda: detectMovement("rotate"))
 
     #Hotkeys for play/pause and muting the sound
-    keyboard.add_hotkey("space", resumeGame)
-    keyboard.add_hotkey("m", muteSound)
+    #keyboard.add_hotkey("space", resumeGame)
+    #keyboard.add_hotkey("m", muteSound)
+
+    master.bind("<Left>", lambda x: detectMovement("left"))
+    master.bind("<Right>", lambda x: detectMovement("right"))
+    master.bind("<Down>", lambda x: detectMovement("down"))
+    master.bind("<Up>", lambda x: detectMovement("rotate"))
+    
+    #Hotkeys for play/pause and muting the sound
+    master.bind("<space>", lambda x: resumeGame())
+    master.bind("m", lambda x: muteSound())
 
 def detectMovement(direction): #Figures out which blocks to move
     for i in blocks:
