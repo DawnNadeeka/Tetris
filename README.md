@@ -9,5 +9,5 @@ CONTROLS:
 
   M key: mute/unmute sound (can also be controlled in the "options" tab)
   Spacebar: pause/play game (can also be controlled using the play/pause button)
-  
-  I have not found any bugs, but if you find one feel free to let me know! Any advice in general is greatly appreciated :)
+
+I have not found any bugs, but if you find one feel free to let me know! Any advice in general is greatly appreciated :)
