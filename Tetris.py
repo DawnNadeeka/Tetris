@@ -54,16 +54,6 @@ coverBoard = 0
 volumeButton = 0
 levelSlider = 0
 
-'''FIXME NOTE'''
-#OPTIONAL Organize and comment everything
-#OPTIONAL Some blocks don't rotate from their true center
-
-#FEATURE (?) Press 'c' to hold a block for later
-#FEATURE (?) Make blocks flash when a line is cleared (and make sure no new blocks are dropped and that the 
-    # player can't use their controls)
-
-#ERROR None!
-
 '''CLASSES'''
 class tetrisBlock: #Creates a block
     def __init__(self):
